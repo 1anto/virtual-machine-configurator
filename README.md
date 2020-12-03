@@ -1,3 +1,8 @@
+# virtual-machine-configurator
+
+Created for HU 18.0 
+React assignment
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
