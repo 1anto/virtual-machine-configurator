@@ -7,7 +7,7 @@ export default function TabsContainer() {
 
     return (
         <div>
-            <div>
+            <div className="tabSelectors">
                 {tabs.map(tab => {
                     return <button>{tab}</button>
                 })}

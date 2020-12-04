@@ -20,16 +20,16 @@ function ImageCard(props: propTypes) {
                 <h3>{props.title}</h3>
                 <p>{props.description}</p>
             </div>
-            <div>
+            <div className="procContainer">
                 <label>
-                    64-bit(x86)
                 <input type="radio" name="procType" value="86" onChange={() => handleChange('86')} />
+                64-bit(x86)
                 </label>
                 <label>
-                    64-bit(ARM)
                 <input type="radio" name="procType" value="ARM" onChange={() => handleChange('ARM')} />
+                64-bit(ARM)
                 </label>
-                <button>Select</button>
+                <button className="fullWidthBtn">Select</button>
             </div>
         </div>
     );

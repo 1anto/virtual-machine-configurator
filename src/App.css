@@ -20,6 +20,12 @@
   color: #61dafb;
 }
 
+.tabSelectors {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 .ImageCard {
   padding: 2rem;
   background-color: white;
@@ -30,4 +36,17 @@
 .ImageIcon {
   max-width: 5em;
   max-height: 5em;
+}
+
+.procContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.fullWidthBtn {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
