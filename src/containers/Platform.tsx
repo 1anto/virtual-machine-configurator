@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageCard from '../components/ImageCard'
 
-function ChooseImage() {
+function Platform() {
     
     const machineImages = [
         { title: 'Linux 2 image', description: 'Linux 2 comes with 5 years of support', img: 'https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg', price: 243.61 },
@@ -25,4 +25,4 @@ function ChooseImage() {
     )
 }
 
-export default ChooseImage;
+export default Platform;
