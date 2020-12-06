@@ -20,6 +20,11 @@
   color: #61dafb;
 }
 
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .tabSelectors {
   padding: 2rem;
   display: flex;

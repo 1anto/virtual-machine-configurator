@@ -3,10 +3,11 @@ import React from 'react';
 type propTypes = {
     title: string,
     description: string,
-    img: string
+    img: string,
+    types: string[]
 }
 
-const handleChange = (event: string) => {
+const handleChange = (event: number) => {
     console.log(event);
 }
 
@@ -21,14 +22,16 @@ function ImageCard(props: propTypes) {
                 <p>{props.description}</p>
             </div>
             <div className="procContainer">
-                <label>
-                <input type="radio" name="procType" value="86" onChange={() => handleChange('86')} />
-                64-bit(x86)
-                </label>
-                <label>
-                <input type="radio" name="procType" value="ARM" onChange={() => handleChange('ARM')} />
-                64-bit(ARM)
-                </label>
+                {
+                    props.types.map((procType, index) => {
+                        return(
+                            <label>
+                                <input type="radio" name="procType" value={procType} onChange={() => handleChange(index)} />
+                                {procType}
+                            </label>
+                        );
+                    })
+                }
                 <button className="fullWidthBtn">Select</button>
             </div>
         </div>
