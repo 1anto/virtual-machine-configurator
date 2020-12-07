@@ -44,9 +44,9 @@ function Platform() {
     
     return (
         <div>
-            {machineImages.map(image => {
+            {machineImages.map((image, index) => {
                 return (
-                    <ImageCard
+                    <ImageCard key={index}
                         title={image.title}
                         description={image.description}
                         img={image.img}

@@ -45,13 +45,13 @@ export default function TabsContainer() {
                 <h2>{tabs[selectedTab].title}</h2>
                 <select>
                     {regions.map((region,index) => {
-                        return <option value={index}>{region}</option>
+                        return <option value={index} key={index}>{region}</option>
                     })}
                 </select>
             </div>
             <div className="tabSelectors">
                 {tabs.map((tab, index) => {
-                    return <button onClick={() => setSelectedTab(index)}>{tab.button}</button>
+                    return <button onClick={() => setSelectedTab(index)} key={index}>{tab.button}</button>
                 })}
             </div>
             {renderSwitch(selectedTab)}

@@ -25,8 +25,8 @@ function ImageCard(props: propTypes) {
                 {
                     props.types.map((procType, index) => {
                         return(
-                            <label>
-                                <input type="radio" name="procType" value={procType} onChange={() => handleChange(index)} />
+                            <label key={index}>
+                                <input type="radio" name="procType" value={procType} onChange={() => handleChange(index)}/>
                                 {procType}
                             </label>
                         );
