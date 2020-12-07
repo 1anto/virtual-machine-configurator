@@ -15,10 +15,12 @@ export default function TabsContainer() {
         {id: 4, button: 'Configure Security', title: 'Security Configuration'},
         {id: 5, button: 'Review & Launch', title: 'Summary'}
     ];
-
     const [selectedTab, setSelectedTab] = React.useState(0);
 
+    const [selectedImage, setSelectedImage] = React.useState(0);
+
     const regions = ['us-east-1', 'us-east-2', 'us-west-1', 'india-1'];
+    const [selectedregion, setSelectedRegion] = React.useState(0);
 
     const renderSwitch = (tabId: number) => {
         switch(tabId) {
@@ -43,7 +45,7 @@ export default function TabsContainer() {
                 <h2>{tabs[selectedTab].title}</h2>
                 <select>
                     {regions.map((region,index) => {
-                        return <option>{region}</option>
+                        return <option value={index}>{region}</option>
                     })}
                 </select>
             </div>
